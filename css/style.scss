@@ -1,0 +1,13 @@
+//color
+
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$darkGrey: hsl(0, 0%, 55%);
+$veryDarkGrey: hsl(0, 0%, 41%);
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+$fontPrimary: "Alata", sans-serif;
+$fontSecondary: "Josefin Sans", sans-serif;
