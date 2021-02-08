@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
 
   <title>Frontend Mentor | Loopstudios landing page</title>
 
@@ -24,27 +25,31 @@
 </head>
 
 <body>
-  <section class="hero">
+  <section class="hero bd-mobile">
     <nav class="menu">
       <img src="./images/logo.svg" alt="Loopstudios-logo" class="menu__logo">
+      <button class="hamburger">
+        <img src="./images/icon-hamburger.svg" alt="hamburger-icon" class="hamburger__icon">
+      </button>
+      <ul class="list">
+        <li class="list__item"><a href="#">About</a></li>
+        <li class="list__item"><a href="#">Careers</a></li>
+        <li class="list__item"><a href="#">Events</a></li>
+        <li class="list__item"><a href="#">Products</a></li>
+        <li class="list__item"><a href="#">Support</a></li>
+      </ul>
     </nav>
-    <button class="hamburger">
-      <img src="./images/icon-hamburger.svg" alt="hamburger-icon" class="hamburger__icon">
-    </button>
-    <ul class="list">
-      <li class="list__items"><a href="#">About</a></li>
-      <li class="list__items"><a href="#">Careers</a></li>
-      <li class="list__items"><a href="#">Events</a></li>
-      <li class="list__items"><a href="#">Products</a></li>
-      <li class="list__items"><a href="#">Support</a></li>
-    </ul>
+
     <div class="hero__text">
       <h1>
-        Immersive experiences that deliver
+        Immersive experiences that <br> deliver
       </h1>
     </div>
   </section>
-  <section class="leader">
+
+
+  <section class="leader bd-mobile">
+    <img src="./images/mobile/image-interactive.jpg" alt="interactive" class="leader__img">
     <h1 class="leader__text">
       The leader in interactive VR
     </h1>
@@ -55,66 +60,74 @@
       to their brand.
     </p>
   </section>
-  <section class="creations">
+
+  <!-- creations -->
+  <section class="creations bd-mobile">
     <h1 class="creations__header">
       Our creations
     </h1>
     <div class="box">
-      <div class="single">
+      <div class="single box__deep">
         <h1 class="single__header">
-          Deep earth
+          Deep <span>earth</span>
         </h1>
       </div>
-      <div class="single">
+      <div class="single box__night">
         <h1 class="single__header">
-          Night arcade
+          Night <span>arcade</span>
         </h1>
       </div>
-      <div class="single">
+      <div class="single box__soccer">
         <h1 class="single__header">
-          Deep earth
+          Soccer <span>team VR</span>
         </h1>
       </div>
-      <div class="single">
+      <div class="single box__grid">
         <h1 class="single__header">
-          Soccer team VR
+          The <span>grid</span>
         </h1>
       </div>
-      <div class="single">
+      <div class="single box__from">
         <h1 class="single__header">
-          The grid
+          From up <span>Above vr</span>
         </h1>
       </div>
-      <div class="single">
+      <div class="single box__pocket">
         <h1 class="single__header">
-          Pocket borealis
+          Pocket <span>borealis</span>
         </h1>
       </div>
-      <div class="single">
+      <div class="single box__curiosity">
         <h1 class="single__header">
-          The curiosity
+          The <span>curiosity</span>
         </h1>
       </div>
-      <div class="single">
+      <div class="single box__fisheye">
         <h1 class="single__header">
-          Make it fisheye
+          Make it <span>fisheye</span>
         </h1>
       </div>
+      <button class="btn">
+        See all
+      </button>
     </div>
-    <button class="btn">
-      See all
-    </button>
+
   </section>
-  <section class="footer">
+  <section class="footer bd-mobile">
     <img src="./images/logo.svg" alt="Loopstudios" class="footer__logo">
-    <ul class="footer__menu">
-      <li class="menu__list"><a href="#">About</a></li>
-      <li class="menu__list"><a href="#">Careers</a></li>
-      <li class="menu__list"><a href="#">Events</a></li>
-      <li class="menu__list"><a href="#">Products</a></li>
-      <li class="menu__list"><a href="#">Support</a></li>
+    <ul class="sub">
+      <li class="sub__list"><a href="#">About</a></li>
+      <li class="sub__list"><a href="#">Careers</a></li>
+      <li class="sub__list"><a href="#">Events</a></li>
+      <li class="sub__list"><a href="#">Products</a></li>
+      <li class="sub__list"><a href="#">Support</a></li>
     </ul>
     <ul class="social">
+      <li class="social__item">
+        <a href="#">
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </a>
+      </li>
       <li class="social__item">
         <a href="#">
           <img src="./images/icon-twitter.svg" alt="facebook">
